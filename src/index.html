@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Marcela Setiawan | Portfolio</title>
+
+  <!-- TAILWIND -->
+  <link href="./output.css" rel="stylesheet" />
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+    body{
+      background-color:#050816;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* HERO BACKGROUND */
+    .hero-section{
+
+      background-image:
+      linear-gradient(
+        rgba(5,8,22,0.45),
+        rgba(5,8,22,0.55)
+      ),
+      url('./images/bg.png');
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav
+    class="fixed top-0 left-0 w-full z-50 bg-black/20 backdrop-blur-xl border-b border-white/10"
+  >
+
+    <div
+      class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center"
+    >
+
+      <!-- MENU -->
+      <ul class="hidden md:flex gap-10 text-sm text-gray-300">
+
+        <li>
+          <a href="#home" class="hover:text-pink-400 transition">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#about" class="hover:text-pink-400 transition">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#skills" class="hover:text-pink-400 transition">
+            Skills
+          </a>
+        </li>
+
+        <li>
+          <a href="#projects" class="hover:text-pink-400 transition">
+            Projects
+          </a>
+        </li>
+
+        <li>
+          <a href="#contact" class="hover:text-pink-400 transition">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+  <section
+    id="home"
+    class="hero-section min-h-screen flex items-center pt-24 relative"
+  >
+
+    <!-- OVERLAY -->
+    <div class="absolute inset-0 bg-black/20"></div>
+
+    <div
+      class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center relative z-10"
+    >
+
+      <!-- LEFT -->
+      <div>
+
+        <p class="text-pink-400 text-2xl mb-5">
+          Hello, I'm
+        </p>
+
+        <h1
+          class="text-6xl md:text-8xl font-extrabold leading-tight mb-8"
+        >
+
+          <span
+            class="bg-gradient-to-r from-pink-500 via-purple-400 to-blue-500 bg-clip-text text-transparent"
+          >
+            Marcela
+          </span>
+
+          <br>
+
+          <span class="text-white">
+            Setiawan
+          </span>
+
+        </h1>
+
+        <!-- DESKRIPSI -->
+        <p
+          class="text-gray-300 text-lg leading-relaxed mb-12 max-w-xl"
+        >
+
+          Mahasiswa Teknik Informatika Universitas Muhammadiyah Malang
+          yang tertarik pada dunia data, mulai dari analisis data,
+          visualisasi, hingga pengembangan website.
+          Saat ini sedang belajar dan mengeksplorasi
+          Data Science, Machine Learning, serta membangun
+          project yang mengubah data menjadi informasi bermakna.
+
+        </p>
+
+        <!-- BUTTON -->
+        <div class="flex flex-wrap gap-5">
+
+          <a
+            href="#projects"
+            class="px-8 py-4 rounded-2xl bg-gradient-to-r from-pink-500 to-purple-600 hover:scale-105 transition duration-300 shadow-lg shadow-pink-500/30"
+          >
+
+            Lihat Project
+
+          </a>
+
+          <a
+            href="#contact"
+            class="px-8 py-4 rounded-2xl border border-purple-500 hover:bg-purple-500/20 transition"
+          >
+
+            Contact Me
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- FOTO -->
+      <div class="flex justify-center">
+
+        <div class="relative">
+
+          <!-- GLOW -->
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-pink-500 to-blue-500 blur-3xl opacity-30 rounded-full"
+          ></div>
+
+          <!-- FOTO -->
+          <div
+            class="relative w-[350px] h-[350px] rounded-full border-4 border-purple-500 overflow-hidden shadow-2xl shadow-purple-500/30"
+          >
+
+            <!-- GANTI FOTO -->
+            <img
+              src="./images/profile.jpeg"
+              class="w-full h-full object-cover"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section
+    id="about"
+    class="py-24 bg-[#070B1A]"
+  >
+
+    <div class="max-w-7xl mx-auto px-8">
+
+      <!-- TITLE -->
+      <div class="mb-16">
+
+        <h2 class="text-5xl font-bold mb-4">
+          About Me
+        </h2>
+
+        <div
+          class="w-40 h-1 rounded-full bg-gradient-to-r from-pink-500 to-blue-500"
+        ></div>
+
+      </div>
+
+      <!-- GRID: PERKENALAN + EDUCATION -->
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+
+        <!-- PERKENALAN -->
+        <div>
+          <h3 class="text-3xl font-bold mb-5">Halo! Perkenalkan,</h3>
+          <p class="text-gray-300 text-lg leading-relaxed">
+            Saya <span class="text-pink-400 font-semibold">Marcela Setiawan</span>, mahasiswa Teknik Informatika Universitas Muhammadiyah Malang yang memiliki ketertarikan besar di bidang <span class="text-purple-400 font-semibold">Data Science</span> dan analisis data.
+            Saya senang mengolah data menjadi insight yang bermakna, membangun visualisasi yang informatif, serta mengeksplorasi bagaimana data bisa membantu pengambilan keputusan yang lebih baik.
+            Selain itu, saya juga tertarik pada pengembangan website modern sebagai media untuk menampilkan hasil kerja dan project saya.
+            Saya terus belajar, berkembang, dan antusias untuk membangun skill di bidang <span class="text-blue-400 font-semibold">Data Analysis, Machine Learning, dan Web Development</span>.
+          </p>
+        </div>
+
+        <!-- EDUCATION -->
+        <div
+          class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[30px] p-10 shadow-2xl"
+        >
+
+          <h2
+            class="text-4xl font-bold mb-10 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent"
+          >
+
+            Education
+
+          </h2>
+
+          <div class="space-y-10">
+
+            <div class="border-l-4 border-pink-500 pl-6">
+
+              <h3 class="text-2xl font-bold mb-2">
+                Universitas Muhammadiyah Malang
+              </h3>
+
+              <p class="text-purple-300 mb-2">
+                Teknik Informatika (S1) — Sedang Berjalan
+              </p>
+
+              <p class="text-gray-400">
+                Saat ini sedang menempuh pendidikan
+                S1 di Universitas Muhammadiyah Malang.
+              </p>
+
+            </div>
+
+            <div class="border-l-4 border-purple-500 pl-6">
+
+              <h3 class="text-2xl font-bold">
+                SMA Negeri 1 Panji
+              </h3>
+
+              <p class="text-gray-400">
+                Lulus 2023
+              </p>
+
+            </div>
+
+            <div class="border-l-4 border-blue-500 pl-6">
+
+              <h3 class="text-2xl font-bold">
+                SMP Negeri 1 Situbondo
+              </h3>
+
+              <p class="text-gray-400">
+                Lulus 2020
+              </p>
+
+            </div>
+
+            <div class="border-l-4 border-cyan-500 pl-6">
+
+              <h3 class="text-2xl font-bold">
+                SD Negeri 8 Mimbaan
+              </h3>
+
+              <p class="text-gray-400">
+                Lulus 2017
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SKILLS -->
+<section
+  id="skills"
+  class="py-24 bg-[#050816]"
+>
+
+  <div class="max-w-7xl mx-auto px-8">
+
+    <!-- TITLE -->
+    <div class="mb-16">
+
+      <h2 class="text-5xl font-bold mb-4">
+        Skills
+      </h2>
+
+      <div
+        class="w-40 h-1 rounded-full bg-gradient-to-r from-pink-500 to-blue-500"
+      ></div>
+
+    </div>
+
+    <!-- SKILL LIST -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <!-- CARD -->
+      <div
+        class="bg-white/5 border border-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition duration-300"
+      >
+
+        <h3 class="text-2xl font-semibold mb-3 text-pink-400">
+          Python
+        </h3>
+
+        <p class="text-gray-400">
+          Data processing dan data analysis menggunakan Python.
+        </p>
+
+      </div>
+
+      <!-- CARD -->
+      <div
+        class="bg-white/5 border border-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition duration-300"
+      >
+
+        <h3 class="text-2xl font-semibold mb-3 text-purple-400">
+          Data Analysis
+        </h3>
+
+        <p class="text-gray-400">
+          Mengolah dan menganalisis data menjadi insight.
+        </p>
+
+      </div>
+
+      <!-- CARD -->
+      <div
+        class="bg-white/5 border border-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition duration-300"
+      >
+
+        <h3 class="text-2xl font-semibold mb-3 text-blue-400">
+          Web Development
+        </h3>
+
+        <p class="text-gray-400">
+          Membuat website responsive dan modern.
+        </p>
+
+      </div>
+
+      <!-- CARD -->
+      <div
+        class="bg-white/5 border border-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition duration-300"
+      >
+
+        <h3 class="text-2xl font-semibold mb-3 text-cyan-400">
+          Tailwind CSS
+        </h3>
+
+        <p class="text-gray-400">
+          Mendesain UI modern menggunakan Tailwind CSS.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section
+  id="projects"
+  class="py-24 bg-[#070B1A]"
+>
+
+  <div class="max-w-7xl mx-auto px-8">
+
+    <!-- TITLE -->
+    <div class="mb-16 flex justify-between items-center flex-wrap gap-4">
+
+      <div>
+
+        <h2 class="text-5xl font-bold mb-4">
+          Projects
+        </h2>
+
+        <div
+          class="w-40 h-1 rounded-full bg-gradient-to-r from-pink-500 to-blue-500"
+        ></div>
+
+      </div>
+
+      <p class="text-gray-400">
+        Project yang pernah saya kerjakan
+      </p>
+
+    </div>
+
+    <!-- PROJECT GRID -->
+    <div class="grid lg:grid-cols-3 gap-8">
+
+      <!-- CARD -->
+      <div
+        class="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[30px] overflow-hidden hover:-translate-y-2 transition duration-300"
+      >
+
+        <!-- IMAGE -->
+        <img
+          src="./images/project1.png"
+          class="h-56 w-full object-cover"
+        >
+
+        <!-- CONTENT -->
+        <div class="p-8">
+
+          <h3 class="text-2xl font-bold mb-4">
+            Toko Accessories Anak
+          </h3>
+
+          <p class="text-gray-400 mb-8">
+            Aplikasi mobile toko accessories anak-anak yang dibangun menggunakan Flutter & Dart.
+          </p>
+
+          <a
+            href="https://github.com/Marcelasetiawan/blinkora"
+            target="_blank"
+            class="inline-block px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 hover:scale-105 transition"
+          >
+
+            View Project
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div
+        class="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[30px] overflow-hidden hover:-translate-y-2 transition duration-300"
+      >
+
+        <!-- IMAGE -->
+        <img
+          src="./images/project2.png"
+          class="h-56 w-full object-cover"
+        >
+
+        <!-- CONTENT -->
+        <div class="p-8">
+
+          <h3 class="text-2xl font-bold mb-4">
+            Website Toko Bunga
+          </h3>
+
+          <p class="text-gray-400 mb-8">
+            Website toko bunga modern dengan tampilan elegan dan desain yang menarik.
+          </p>
+
+          <a
+            href="https://github.com/Marcelasetiawan/celavie-florist"
+            target="_blank"
+            class="inline-block px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 hover:scale-105 transition"
+          >
+
+            View Project
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div
+        class="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[30px] overflow-hidden hover:-translate-y-2 transition duration-300"
+      >
+
+        <!-- IMAGE -->
+        <img
+          src="./images/project3.png"
+          class="h-56 w-full object-cover"
+        >
+
+        <!-- CONTENT -->
+        <div class="p-8">
+
+          <h3 class="text-2xl font-bold mb-4">
+            Dashboard AgriYield
+          </h3>
+
+          <p class="text-gray-400 mb-8">
+            Dashboard prediksi hasil panen menggunakan model Data Mining AgriYield.
+          </p>
+
+          <a
+            href="https://github.com/Marcelasetiawan/Dashboard-Data_Mining.git"
+            target="_blank"
+            class="inline-block px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 hover:scale-105 transition"
+          >
+
+            View Project
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+<!-- CONTACT -->
+<section
+  id="contact"
+  class="py-24 bg-[#050816]"
+>
+
+  <div class="max-w-7xl mx-auto px-8">
+
+    <div
+      class="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[40px] p-14 grid lg:grid-cols-2 gap-14 items-center"
+    >
+
+      <!-- LEFT -->
+      <div>
+
+        <h2 class="text-5xl font-bold leading-tight mb-6">
+
+          Tertarik bekerja sama
+          atau ingin berdiskusi?
+
+        </h2>
+
+        <p class="text-gray-400 text-lg leading-relaxed mb-10">
+
+          Saya terbuka untuk peluang baru,
+          kolaborasi, maupun project menarik lainnya.
+
+        </p>
+
+        <a
+          href="https://wa.me/6282131679891"
+          target="_blank"
+          class="inline-block px-8 py-4 rounded-2xl bg-gradient-to-r from-pink-500 to-purple-600 hover:scale-105 transition duration-300 shadow-lg shadow-pink-500/30"
+        >
+
+          Kirim Pesan
+
+        </a>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="space-y-4 text-lg">
+
+        <a
+          href="mailto:marcelaasetiawan@gmail.com"
+          target="_blank"
+          class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl px-6 py-4 hover:-translate-y-1 hover:scale-[1.02] hover:bg-pink-500/10 hover:border-pink-500 hover:shadow-lg hover:shadow-pink-500/20 transition-all duration-300"
+        >
+          <span class="text-2xl">✉️</span>
+          <div>
+            <p class="text-pink-400 font-semibold">Email</p>
+            <p class="text-gray-300 text-base">marcelaasetiawan@gmail.com</p>
+          </div>
+        </a>
+
+        <a
+          href="https://wa.me/6282131679891"
+          target="_blank"
+          class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl px-6 py-4 hover:-translate-y-1 hover:scale-[1.02] hover:bg-purple-500/10 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300"
+        >
+          <span class="text-2xl">💬</span>
+          <div>
+            <p class="text-purple-400 font-semibold">WhatsApp</p>
+            <p class="text-gray-300 text-base">082131679891</p>
+          </div>
+        </a>
+
+        <a
+          href="https://instagram.com/marselawn"
+          target="_blank"
+          class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl px-6 py-4 hover:-translate-y-1 hover:scale-[1.02] hover:bg-pink-500/10 hover:border-pink-500 hover:shadow-lg hover:shadow-pink-500/20 transition-all duration-300"
+        >
+          <span class="text-2xl">📸</span>
+          <div>
+            <p class="text-pink-400 font-semibold">Instagram</p>
+            <p class="text-gray-300 text-base">@usernamekamu</p>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/MarcelaSetiawan"
+          target="_blank"
+          class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl px-6 py-4 hover:-translate-y-1 hover:scale-[1.02] hover:bg-blue-500/10 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
+        >
+          <span class="text-2xl">🐙</span>
+          <div>
+            <p class="text-blue-400 font-semibold">GitHub</p>
+            <p class="text-gray-300 text-base">MarcelaSetiawan</p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer
+  class="border-t border-white/10 py-8 text-center text-gray-500 bg-[#050816]"
+>
+
+  © 2026 Marcela Setiawan. All rights reserved.
+
+</footer>
+
+</body>
+
+</html>
